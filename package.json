@@ -1,0 +1,34 @@
+{
+	"name": "tutara-vscode",
+	"displayName": "Tutara",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.51.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "tutara",
+				"aliases": [
+					"Tutara",
+					"tutara"
+				],
+				"extensions": [
+					".ttr"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "tutara",
+				"scopeName": "source.tutara",
+				"path": "./syntaxes/tutara.tmLanguage.json"
+			}
+		]
+	}
+}
